@@ -1,0 +1,64 @@
+body{
+    width: 1024px;
+    margin: auto;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    text-align: right;
+}
+.head a{
+    color:#000;
+}
+.head button{
+    margin-right:20%;
+}
+
+.div1,.div2,.div3{
+    margin-bottom: 1000px;
+    margin-top: 10px;
+    height: auto;
+    border: 1px solid black;
+}
+.sidebar{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    float: left;
+    right: 120px;
+    top: 10px;
+    border: 1px solid #000;   
+}
+.mask{
+    width:100%;
+    height:100%; 
+    position:fixed; 
+    left:0; 
+    top:0; 
+    z-index:10; 
+    background:#000; 
+    opacity:.5; 
+    filter:alpha(opacity=50);
+}
+
+#modalLayer{
+    display:none; 
+    position:relative;
+}
+#modalLayer .modalContent{
+    width:440px; 
+    height:200px; 
+    padding:20px; 
+    border:1px solid #ccc; 
+    position:fixed; 
+    left:50%; 
+    top:50%; 
+    z-index:11; 
+    background:#fff;
+}
+#modalLayer .modalContent button{position:absolute; 
+    right:0; 
+    top:0; 
+    cursor:pointer;
+}
