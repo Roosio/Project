@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
+
 <body>
+    <script>
+        $(function () {
+            $("html, body").animate({scrollTop: 0}, "slow");
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="modal.js"></script>
     <script src="autoscroll.js"></script>
-    <a href="#modalLayer" class="modal">로그인</a>
+    <script src="followbar.js"></script>
+    <div class="head">
+        <div class="scrollbtn">
+            <button onclick="fnMove('1')">div1로 이동</button>
+            <button onclick="fnMove('2')">div2로 이동</button>
+            <button onclick="fnMove('3')">div3로 이동</button>
+        </div>
+        <a href="#modalLayer" class="modal">로그인</a>
+    </div>
+    <div class="sidebar">
+        <button>사이드바</button>
+    </div>
     <div id="modalLayer">
         <div class="modalContent">
             <h1>안녕</h1>
             <button type="button">닫기</button>
         </div>
     </div>
-    <div class="scrollbtn">
-    <button onclick="fnMove('1')">div1로 이동</button>    
-    <button onclick="fnMove('2')">div2로 이동</button>
-    <button onclick="fnMove('3')">div3로 이동</button>
+
     <div class="div1">div1</div>
     <div class="div2">div2</div>
     <div class="div3">div3</div>
-</div>
 </body>
+
 </html>

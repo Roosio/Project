@@ -1,10 +1,34 @@
-a{
+body{
+    width: 1024px;
+    margin: auto;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    text-align: right;
+}
+.head a{
     color:#000;
 }
+.head button{
+    margin-right:20%;
+}
+
 .div1,.div2,.div3{
     margin-bottom: 1000px;
+    margin-top: 10px;
+    height: auto;
+    border: 1px solid black;
 }
-.scrollbtn{
+.sidebar{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    float: left;
+    right: 120px;
+    top: 10px;
+    border: 1px solid #000;   
 }
 .mask{
     width:100%;
