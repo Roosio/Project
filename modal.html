@@ -8,16 +8,13 @@
 </head>
 
 <body>
-    <script>
-        $(function () {
-            $("html, body").animate({scrollTop: 0}, "slow");
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="modal.js"></script>
     <script src="autoscroll.js"></script>
     <script src="followbar.js"></script>
-    <div class="head">
+
+
+    <div class="head"> <!-- 스크롤 이동버튼과 로그인 모달창 -->
         <div class="scrollbtn">
             <button onclick="fnMove('1')">div1로 이동</button>
             <button onclick="fnMove('2')">div2로 이동</button>
@@ -25,6 +22,8 @@
         </div>
         <a href="#modalLayer" class="modal">로그인</a>
     </div>
+
+
     <div class="sidebar">
         <button>사이드바</button>
     </div>
